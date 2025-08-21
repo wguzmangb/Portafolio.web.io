@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio - Tu Nombre</title>
+  <title>Portafolio</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Iconos -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Animaciones AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- Estilos personalizados -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Wilfrido Guzman</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -32,24 +35,22 @@
   </nav>
 
   <!-- Hero -->
-<section class="hero d-flex align-items-center justify-content-center text-center text-white">
-  <div class="container">
-    <img src="https://via.placeholder.com/150" class="rounded-circle mb-3 shadow" alt="Tu Foto">
-    <h1 class="fw-bold">Hola, soy <span class="text-primary">Wilfrido Guzman</span></h1>
-    <h2 class="typewriter mt-3">Desarrollador .NET | Web & Apps Móviles</h2>
-
-    <div class="mt-4">
-      <a href="#projects" class="btn btn-outline-light btn-lg me-2">🚀 Ver Proyectos</a>
-      <a href="#contact" class="btn btn-primary btn-lg">✉️ Contáctame</a>
+  <section class="hero d-flex align-items-center justify-content-center text-center text-white">
+    <div class="container" data-aos="fade-up">
+      
+      <h1 class="fw-bold">Hola, soy <span class="text-primary">Wilfrido Guzman</span></h1>
+      <h2 class="typewriter mt-3">Desarrollador .NET | Web & Apps Móviles</h2>
+      <div class="mt-4">
+        <a href="#projects" class="btn btn-outline-light btn-lg me-2">🚀 Ver Proyectos</a>
+        <a href="#contact" class="btn btn-primary btn-lg">✉️ Contáctame</a>
+      </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- Sobre mí -->
   <section id="about" class="container py-5">
-    <h2 class="text-center mb-4">👨‍💻 Sobre mí</h2>
-    <p class="text-center">
+    <h2 class="text-center mb-4" data-aos="fade-up">👨‍💻 Sobre mí</h2>
+    <p class="text-center" data-aos="fade-up" data-aos-delay="100">
       Soy un desarrollador apasionado por crear soluciones digitales innovadoras. 
       Tengo experiencia en el desarrollo de aplicaciones web y móviles con .NET, MAUI y SQL Server.
     </p>
@@ -58,75 +59,107 @@
   <!-- Habilidades -->
   <section id="skills" class="bg-light py-5">
     <div class="container">
-      <h2 class="text-center mb-4">⚡ Habilidades</h2>
+      <h2 class="text-center mb-4" data-aos="fade-up">⚡ Habilidades</h2>
       <div class="row text-center g-4">
-        <div class="col-md-3"><i class="bi bi-code-slash fs-1 text-primary"></i><p>C# / .NET</p></div>
-        <div class="col-md-3"><i class="bi bi-database fs-1 text-success"></i><p>SQL Server</p></div>
-        <div class="col-md-3"><i class="bi bi-phone fs-1 text-info"></i><p>.NET MAUI</p></div>
-        <div class="col-md-3"><i class="bi bi-laptop fs-1 text-warning"></i><p>ASP.NET MVC</p></div>
+        <div class="col-md-3" data-aos="zoom-in"><div class="card p-3 shadow-sm"><i class="bi bi-code-slash fs-1 text-primary"></i><p>C# / .NET</p></div></div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100"><div class="card p-3 shadow-sm"><i class="bi bi-database fs-1 text-success"></i><p>SQL Server</p></div></div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200"><div class="card p-3 shadow-sm"><i class="bi bi-phone fs-1 text-info"></i><p>.NET MAUI</p></div></div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300"><div class="card p-3 shadow-sm"><i class="bi bi-laptop fs-1 text-warning"></i><p>ASP.NET MVC</p></div></div>
       </div>
     </div>
   </section>
 
   <!-- Proyectos -->
-  <section id="projects" class="container py-5">
-    <h2 class="text-center mb-4">🚀 Proyectos</h2>
-    <div class="row g-4">
-      <!-- Proyecto 1 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="https://via.placeholder.com/600x300" class="card-img-top" alt="Proyecto 1">
-          <div class="card-body">
-            <h5 class="card-title">Sistema de Ventas</h5>
-            <p class="card-text">CRUD de productos, clientes y ventas con reportes en ASP.NET MVC + SQL Server.</p>
-            <a href="https://github.com/tuusuario/sistema-ventas" target="_blank" class="btn btn-outline-primary">Ver en GitHub</a>
-          </div>
+<!-- Proyectos -->
+<section id="projects" class="container py-5">
+  <h2 class="text-center mb-4" data-aos="fade-up">🚀 Proyectos</h2>
+  <div class="row g-4">
+
+    <!-- Proyecto 1 -->
+    <div class="col-md-4" data-aos="fade-up">
+      <div class="card h-100 shadow-sm project-card">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/yy7o_ArxoY0" 
+                  title="Proyecto 1" allowfullscreen></iframe>
         </div>
-      </div>
-      <!-- Proyecto 2 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="https://via.placeholder.com/600x300" class="card-img-top" alt="Proyecto 2">
-          <div class="card-body">
-            <h5 class="card-title">App de Gastos Personales</h5>
-            <p class="card-text">Aplicación móvil en .NET MAUI para registrar ingresos y gastos con reportes visuales.</p>
-            <a href="https://github.com/tuusuario/app-gastos" target="_blank" class="btn btn-outline-primary">Ver en GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- Proyecto 3 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img src="https://via.placeholder.com/600x300" class="card-img-top" alt="Proyecto 3">
-          <div class="card-body">
-            <h5 class="card-title">Dashboard de Reportes</h5>
-            <p class="card-text">Panel con gráficas dinámicas y login de usuarios en ASP.NET Core + Chart.js.</p>
-            <a href="https://github.com/tuusuario/dashboard-reportes" target="_blank" class="btn btn-outline-primary">Ver en GitHub</a>
-          </div>
+        <div class="card-body">
+          <h5 class="card-title">App de Clima en .NET MAUI con API</h5>
+          <p class="card-text">integrar servicios externos, manejar datos JSON y personalizar la interfaz de usuario.</p>
+        
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Proyecto 2 -->
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+      <div class="card h-100 shadow-sm project-card">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/YNc7jUxYZEQ" 
+                  title="Proyecto 2" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Gestión de Almacén</h5>
+          <p class="card-text">Visualizar, gestionar y optimizar el manejo de clientes dentro del sistema</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+      <div class="card h-100 shadow-sm project-card">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/vUm6dymMEWs" 
+                  title="Proyecto 3" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">CRUD con .NET MAUI y Firebase Realtime Database </h5>
+          <p class="card-text">Actualizar y eliminar productos de una base de datos en tiempo real y a integrar Firebase en tu app multiplataforma.</p>
+         
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- Contacto -->
   <section id="contact" class="bg-light py-5">
     <div class="container">
-      <h2 class="text-center mb-4">📬 Contacto</h2>
-      <p class="text-center">¿Quieres trabajar conmigo? Escríbeme:</p>
-      <div class="text-center">
-        <p><i class="bi bi-envelope"></i> <a href="mailto:tuemail@gmail.com">tuemail@gmail.com</a></p>
-        <p><i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a></p>
-        <p><i class="bi bi-github"></i> <a href="https://github.com/tuusuario" target="_blank">GitHub</a></p>
+      <h2 class="text-center mb-4" data-aos="fade-up">📬 Contacto</h2>
+      <p class="text-center" data-aos="fade-up" data-aos-delay="100">¿Quieres trabajar conmigo? Escríbeme:</p>
+      <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+        <p><i class="bi bi-envelope"></i> <a href="mailto:wguzmangb@gmail.com">wguzmangb@gmail.com</a></p>
+        <p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/wilfrido-guzman/" target="_blank">LinkedIn</a></p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center p-3">
-    <p class="mb-0">© 2025 Tu Nombre - Portafolio</p>
+    <div class="mb-2">
+        <a href="https://www.linkedin.com/in/wilfrido-guzman/" target="_blank" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+    </div>
+    <p class="mb-0">© 2025 Wilfrido Guzman - Portafolio</p>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+    // Navbar scroll effect
+    window.addEventListener("scroll", function() {
+      const nav = document.querySelector("nav");
+      if (window.scrollY > 50) {
+        nav.classList.add("bg-dark", "shadow");
+      } else {
+        nav.classList.remove("bg-dark", "shadow");
+      }
+    });
+  </script>
 </body>
 </html>
